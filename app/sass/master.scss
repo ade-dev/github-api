@@ -1,0 +1,51 @@
+
+p, h1, h2, h3, img{
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 15px 0px 30px 0px;
+  text-align: center;
+}
+h2{
+  padding: 0px 0px 10px 15px;
+  font-weight: 600;
+}
+p, label, input, li, td, th, h2{
+  font-size: 0.812rem;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  cursor: pointer;
+}
+h1, h2, p{
+  line-height: 1;
+}
+.pagewrap{
+  max-width: 800px;
+  margin: 0px auto;
+  form{
+    padding: 0px 0px 15px 15px;
+  }
+  table{
+    position: relative;
+    width: 100%;
+  }
+  th, td{
+    width:33.333%;
+    padding: 0px 15px;
+    word-break: break-all;
+  }
+  td{
+    line-height: 1.5;
+  }
+  input{
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+}
+

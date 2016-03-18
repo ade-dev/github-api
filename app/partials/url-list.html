@@ -1,0 +1,13 @@
+              <h2>Results</h2>
+              <table>
+              <tr>
+                <th>URL</th>
+                <th>Number of stars</th>
+                <th>Forks</th>
+              </tr>
+              <tr ng-repeat="repo in repos | orderBy: orderIndex:true">
+                <td>{{repo.html_url}}</td>
+                <td>{{repo.stargazers_count}}</td>
+                <td>{{repo.forks_count}}</td>
+              </tr>
+              </table>
