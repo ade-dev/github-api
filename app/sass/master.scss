@@ -1,51 +1,87 @@
-
-p, h1, h2, h3, img{
-  margin: 0px;
-  padding: 0px;
+html{
+  overflow-y: scroll;
 }
 h1{
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 15px 0px 30px 0px;
-  text-align: center;
+  font-size: 1.5rem;
+  color: #999999;
+  padding: 15px 0px 40px 0px;
 }
 h2{
-  padding: 0px 0px 10px 15px;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 p, label, input, li, td, th, h2{
-  font-size: 0.812rem;
+  //font-size: 0.812rem;
 }
 ul{
   list-style-type: none;
 }
-a{
-  cursor: pointer;
-}
-h1, h2, p{
-  line-height: 1;
-}
 .pagewrap{
   max-width: 800px;
   margin: 0px auto;
-  form{
-    padding: 0px 0px 15px 15px;
+  padding: 10px 0px 50px 0px;
+  .ng-cloak{
+    display: none;
   }
+
+}
+form{
+  margin-bottom: 60px;
+  input{
+    margin: 0px;
+    padding-left: 10px;
+    border: 1px solid #dcdcdc;
+    &.submit{
+      background-color: #f5f5f5;
+      background-image: -webkit-linear-gradient(center top , #f5f5f5, #f1f1f1);
+      background-image: linear-gradient(center top , #f5f5f5, #f1f1f1);
+      border: 1px solid #dcdcdc;
+    }
+    &:active, &:focus{
+      border: 1px solid #c2c2c2;
+      outline-color: #c2c2c2;
+    }
+  }
+}
+.results{
+  // display: none;
   table{
     position: relative;
     width: 100%;
+    border-spacing: 0;
   }
-  th, td{
-    width:33.333%;
-    padding: 0px 15px;
-    word-break: break-all;
+  tr{
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    color: #222222;
+  }
+  th{
+    padding: 10px 15px 10px 0px;
+    border-top: 1px solid #e5e5e5;
   }
   td{
     line-height: 1.5;
+    padding: 5px 15px 5px 0px;
+    overflow: visible;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:nth-child(1){
+      width: 60%;
+    }
+
   }
-  input{
-    padding-left: 5px;
-    margin-left: 5px;
+  th:nth-child(1),
+  td:nth-child(1){
+    padding-left: 15px;
   }
+  tr:nth-child(odd) {
+    background: rgba(243, 243, 243, 0.85)
+  }
+}
+.alert {
+  background-color: transparent;
 }
 

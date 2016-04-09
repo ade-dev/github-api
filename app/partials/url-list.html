@@ -1,4 +1,4 @@
-              <h2>Results</h2>
+              <h2>Results for {{username}}</h2>
               <table>
               <tr>
                 <th>URL</th>
@@ -6,7 +6,7 @@
                 <th>Forks</th>
               </tr>
               <tr ng-repeat="repo in repos | orderBy: orderIndex:true">
-                <td>{{repo.html_url}}</td>
+                <td><a href="{{repo.html_url}}">{{repo.html_url}}</a></td>
                 <td>{{repo.stargazers_count}}</td>
                 <td>{{repo.forks_count}}</td>
               </tr>

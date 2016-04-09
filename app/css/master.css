@@ -1,43 +1,85 @@
-p, h1, h2, h3, img {
-  margin: 0px;
-  padding: 0px; }
+html {
+  overflow-y: scroll;
+}
 
 h1 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 15px 0px 30px 0px;
-  text-align: center; }
+  font-size: 1.5rem;
+  color: #999999;
+  padding: 15px 0px 40px 0px;
+}
 
 h2 {
-  padding: 0px 0px 10px 15px;
-  font-weight: 600; }
-
-p, label, input, li, td, th, h2 {
-  font-size: 0.812rem; }
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
 
 ul {
-  list-style-type: none; }
-
-a {
-  cursor: pointer; }
-
-h1, h2, p {
-  line-height: 1; }
+  list-style-type: none;
+}
 
 .pagewrap {
   max-width: 800px;
-  margin: 0px auto; }
-  .pagewrap form {
-    padding: 0px 0px 15px 15px; }
-  .pagewrap table {
-    position: relative;
-    width: 100%; }
-  .pagewrap th, .pagewrap td {
-    width: 33.333%;
-    padding: 0px 15px;
-    word-break: break-all; }
-  .pagewrap td {
-    line-height: 1.5; }
-  .pagewrap input {
-    padding-left: 5px;
-    margin-left: 5px; }
+  margin: 0px auto;
+  padding: 10px 0px 50px 0px;
+}
+.pagewrap .ng-cloak {
+  display: none;
+}
+
+form {
+  margin-bottom: 60px;
+}
+form input {
+  margin: 0px;
+  padding-left: 10px;
+  border: 1px solid #dcdcdc;
+}
+form input.submit {
+  background-color: #f5f5f5;
+  background-image: -webkit-linear-gradient(center top, whitesmoke, #f1f1f1);
+  background-image: linear-gradient(center top, whitesmoke, #f1f1f1);
+  border: 1px solid #dcdcdc;
+}
+form input:active, form input:focus {
+  border: 1px solid #c2c2c2;
+  outline-color: #c2c2c2;
+}
+
+.results table {
+  position: relative;
+  width: 100%;
+  border-spacing: 0;
+}
+.results tr {
+  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+  color: #222222;
+}
+.results th {
+  padding: 10px 15px 10px 0px;
+  border-top: 1px solid #e5e5e5;
+}
+.results td {
+  line-height: 1.5;
+  padding: 5px 15px 5px 0px;
+  overflow: visible;
+  border-bottom: 1px solid #e5e5e5;
+  outline: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.results td:nth-child(1) {
+  width: 60%;
+}
+.results th:nth-child(1),
+.results td:nth-child(1) {
+  padding-left: 15px;
+}
+.results tr:nth-child(odd) {
+  background: rgba(243, 243, 243, 0.85);
+}
+
+.alert {
+  background-color: transparent;
+}
