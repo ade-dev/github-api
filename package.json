@@ -2,7 +2,7 @@
   "name": "github-api",
   "private": false,
   "description": "AngularJS application to access GitHub's API",
-  "repository": "https://github.com/ade-dev/Page-Layout-Exercise.git",
+  "repository": "https://github.com/ade-dev/github-api.git",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite"
